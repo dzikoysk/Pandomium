@@ -63,6 +63,13 @@
                 <version>1.0.0</version>
             </dependency>
 
+            <!-- macOS x64 -->
+            <dependency>
+                <groupId>org.panda-lang.pandomium-natives</groupId>
+                <artifactId>pandomium-natives-macosx64</artifactId>
+                <version>67.0.5</version>
+            </dependency>
+
             <!-- Utilities -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
