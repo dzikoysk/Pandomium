@@ -5,11 +5,11 @@
     <groupId>org.panda-lang</groupId>
     <artifactId>pandomium-parent</artifactId>
     <packaging>pom</packaging>
-    <version>67.0.6</version>
+    <version>81.2</version>
     <scm>
-        <connection>scm:git:https://github.com/Panda-Programming-Language/Pandomium.git</connection>
-        <developerConnection>scm:git:https://github.com/Panda-Programming-Language/Pandomium.git</developerConnection>
-        <url>https://github.com/Panda-Programming-Language/Pandomium</url>
+        <connection>scm:git:https://github.com/dzikoysk/pandomium.git</connection>
+        <developerConnection>scm:git:https://github.com/dzikoysk/pandomium.git</developerConnection>
+        <url>https://github.com/dzikoysk/pandomium</url>
     </scm>
     <modules>
         <module>pandomium</module>
@@ -41,7 +41,21 @@
             <dependency>
                 <groupId>org.panda-lang</groupId>
                 <artifactId>panda</artifactId>
-                <version>indev-0.8.87</version>
+                <version>indev-19.5.22</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.tinylog</groupId>
+                        <artifactId>tinylog-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.tinylog</groupId>
+                        <artifactId>tinylog-impl</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.tinylog</groupId>
+                        <artifactId>slf4j-tinylog</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <!-- Windows x64 -->
